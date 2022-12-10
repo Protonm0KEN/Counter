@@ -1,0 +1,63 @@
+.counter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &-title{
+        font-family: 'Roboto', sans-serif;
+        font-size: 36px;
+        color: rgb(61, 105, 143);
+
+    }
+    &-number{
+        font-family: 'Roboto', sans-serif;
+        font-size: 36px;
+        color: rgb(0, 0, 0);
+    }
+    &__buttons{
+        display: flex;
+        column-gap: 40px;
+        &-button{
+            border-radius: 10px;
+            padding: 20px 40px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            transition: 0.2s;
+        }
+        &-button:hover{
+            transform: translateY(-3px);
+        }
+        &-button:active{
+            transform: translateY(-1px);
+            box-shadow: 0 3px 0 darkred;
+        }
+        &-button.minus{
+            border-radius: 16px;
+            background-color: red;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 0.08rem;
+            color: rgb(255, 255, 255);
+        }
+        &-button.minus:hover{
+            box-shadow: 0 5px 0 darkred;
+        }
+        &-button.plus{
+            border-radius: 16px;
+            background-color: rgb(4, 247, 166);
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 0.08rem;
+            color: rgb(255, 255, 255);
+
+        }
+        &-button.plus:hover{
+            box-shadow: 0 5px 0 darkgreen;
+        }
+    }
+}
